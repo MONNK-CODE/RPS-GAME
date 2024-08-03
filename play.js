@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const playerLabel2 = document.getElementById('playerLabel2');
   const playerScore1Span = document.getElementById('playerScore'); 
   const playerScore2Span = document.getElementById('computerScore'); 
+  const scoretable = document.querySelector('.score-table');
   
   // this initializes the player choices and scores
   let playerInputs = []; // this array to stores the player choices
@@ -79,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
       playerLabel1.innerHTML = '<i class="fa-solid fa-trophy"></i> Player 1 Score: '; 
       playerLabel1.style.color = 'blue'; 
       playerLabel2.style.color = 'black';
+      scoretable.style.backgroundColor = 'white';
     } else if (playerScore2 > playerScore1) {
       playerLabel2.innerHTML = '<i class="fa-solid fa-trophy"></i> Player 2 Score: ';
       playerLabel2.style.color = 'blue';
@@ -86,9 +88,10 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       // In case of a draw, reset labels without trophies
       playerLabel1.innerHTML = 'Player 1 Score: '; 
-      playerLabel1.style.color = 'red'; // draw color
+      playerLabel1.style.color = 'white'; // draw color
       playerLabel2.innerHTML = 'Player 2 Score: '; 
-      playerLabel2.style.color = 'red'; //  draw color
+      playerLabel2.style.color = 'white'; //  draw color
+      scoretable.style.backgroundColor = 'black'; // draw color
     }
   }
 
@@ -109,6 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
     playerLabel2.innerHTML = 'Player 2 Score: '; 
     playerLabel1.style.color = 'black'; 
     playerLabel2.style.color = 'black'; 
+    scoretable.style.backgroundColor = 'white';
     restart.click(); // Trigger the restart function to reset the game
   });
 

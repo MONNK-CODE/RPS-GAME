@@ -3,120 +3,104 @@
   font-family: "Poppins";
 }
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  background: #f6f7fb;
-  box-sizing: border-box;
-} 
-
-.title{
+  font-family: Arial, sans-serif;
   text-align: center;
-}
-
-
-.gamebox{
   margin-top: 50px;
-  background: #5d7bf4;
-  padding: 2rem 7rem;
-  border-radius: 14px;
+  background-color: #f2f2f2;
 }
-
-.winner{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+h1 {
+  color: #090707;
+  font-size: 50px;
 }
-
-.score-table {
-    border: 2px solid #333;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: white;
-    /* width: 100%; */
-    margin-top: 50px; 
-    display: flex;
-    flex-direction: column;  
-   align-items: center;  
-   justify-content: center;  
+p{
+  color: #1c1c1c;
+  font-size: 50px;
+   font-weight: bold;
 }
-
-.score-entry {
-    margin: 10px;
-    font-size: 24px;
+.button {
+  font-size: 20px;
+  background-color: #007BFF;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 1s ease, color 1s ease, border-radius 1s ease;
 }
-.label {
-    margin-right: 10px;
-    font-weight: bold;
-}
-.score {
-    color: #007BFF;
+.button:hover {
+  background-color: #0a0a0a;
+  color: #f9f1f1;
+  border-radius: 20px;
 }
 
 
-.materials {
+.materials  {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-}
-
-.materials button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px; 
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  outline: none;
-  font-size: 50px; 
-  transition: background-color 1s ease, border-radius 1s ease,font-size 1s ease;
-}
-
-.materials button:hover {
-  font-size : 30px;
+  font-size: 100px; 
 }
 
 
-.restartbox{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap : 1rem;
+/* Rock Icon Styles - Up and Down Movement */
+#rock-icon {
+    color: #8a1900; 
+    margin: 10px; 
+    animation: rockBounce 1.5s ease-in-out infinite; 
 }
 
-.restartscore , .restart{
-  display: inline-flex;
-  justify-content: center; 
-  align-items: center;
-  outline: none;
-  cursor: pointer;
-  border-radius: 3px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  padding: 2px 16px;
-  height: 38px;
-  min-width: 96px;
-  min-height: 38px;
-  border: none;
-  color: #fff;
-  background-color: rgb(17, 19, 17);
-  transition: background-color 1s ease, color 1s ease, border-radius 1s ease;
+/* Paper Icon Styles - Waving Motion */
+#paper-icon {
+    color: #007BFF; 
+    margin: 10px;
+    animation: paperWave 1.5s ease-in-out infinite; 
 }
-.restartscore:hover, .restart:hover {
-  border-radius: 20px;
- background-color: #fff;
-  color:  rgb(17, 19, 17);
-  
-  }
 
+/* Scissors Icon Styles - Cutting Motion */
+#scissors-icon {
+    color: #018337; 
+    margin: 10px;
+    animation: scissorsCut 0.8s ease-in-out infinite; 
+}
 
+/* Keyframes for Rock Icon Bounce */
+@keyframes rockBounce {
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-20px); 
+    }
+}
 
+/* Keyframes for Paper Icon Wave */
+@keyframes paperWave {
+    0% {
+        transform: rotate(0deg); 
+    }
+    25% {
+        transform: rotate(15deg); 
+    }
+    50% {
+        transform: rotate(0deg); 
+    }
+    75% {
+        transform: rotate(-15deg); 
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
+}
 
-
-
-
+/* Keyframes for Scissors Icon Cutting Motion */
+@keyframes scissorsCut {
+    0%, 100% {
+        transform: rotate(0deg) scale(1); 
+    }
+    50% {
+        transform: rotate(-20deg) scale(1.1); 
+    }
+}
