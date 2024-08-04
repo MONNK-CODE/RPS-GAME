@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             disableButtons(false);
             updateScoreDisplay();
         } else {
-            result.innerHTML = "Please play a round first2.";
+            result.innerHTML = "Please play a round first.";
         }
     });
 
