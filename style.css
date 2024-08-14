@@ -134,7 +134,7 @@ p {
   .materials {
     font-size: 60px;
 
-  /* Remove hover effects on mobile */
+  /* ths removes hover effects on mobile */
   .button:hover {
     background-color: #007bff;
     color: #ffffff;
