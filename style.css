@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
@@ -56,21 +56,21 @@ p {
 
 /* Rock Icon Styles - Up and Down Movement */
 #rock-icon {
-  color: #8a1900;
+  color: #490059;
   margin: 10px;
   animation: rockBounce 1.5s ease-in-out infinite;
 }
 
 /* Paper Icon Styles - Waving Motion */
 #paper-icon {
-  color: #007bff;
+  color: royalblue;
   margin: 10px;
   animation: paperWave 1.5s ease-in-out infinite;
 }
 
 /* Scissors Icon Styles - Cutting Motion */
 #scissors-icon {
-  color: #018337;
+  color: darkgreen;
   margin: 10px;
   animation: scissorsCut 0.8s ease-in-out infinite;
 }
