@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function playerChoice(choice) {
     // this prevents choosing if the round is over
     if (roundOver) {
-      display2.innerHTML = "<span style = 'color: white;'>PRESS NEW ROUND TO CONTINUE</span>";
+      display2.innerHTML = "<span style = 'color: red;'>PRESS NEW ROUND TO CONTINUE</span>";
       return; // this exits the function if the round is over
     }
 
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // this fucntion updates the score display
+  // this function updates the score display
   function updateScores() {
     // this adds the trophy icon for the leading player and chnages its color
     if (playerScore1 > playerScore2) {

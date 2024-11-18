@@ -51,7 +51,7 @@ p {
   align-items: center;
   gap: 1rem;
   font-size: 100px; /* Original size for desktop */
-  flex-wrap: wrap; /* Allow icons to wrap on small screens */
+  flex-wrap: wrap; /* Allows for icons to wrap on small screens */
 }
 
 /* Rock Icon Styles - Up and Down Movement */
