@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const paper = document.querySelector(".paper"); 
   const scissors = document.querySelector(".scissors");
   const restart = document.querySelector(".restart"); 
-  const restartScore = document.querySelector(".restartscore");
+  const restartScore = document.querySelector(".restart-score");
   const display = document.querySelector(".display"); 
   const display2 = document.querySelector(".display2"); 
   const playerLabel1 = document.getElementById('playerLabel1'); 

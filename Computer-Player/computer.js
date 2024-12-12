@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let scissors = document.querySelector(".scissors");
     let result = document.querySelector(".result");
     let restart = document.querySelector(".restart");
-    let restartscore = document.querySelector(".restartscore");
+    let restartscore = document.querySelector(".restart-score");
     let playerScore = 0;
     let computerScore = 0;
     let playerScoreSpan = document.getElementById('playerScore');
